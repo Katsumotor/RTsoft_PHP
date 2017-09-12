@@ -25,14 +25,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="col-sm-7">
             <input type="text" class="form-control" value="<?php if (isset($dataForm['NazevProjektu'])) echo $dataForm['NazevProjektu'] ?>" name="NazevProjektu" id="nazevProjektu" ><?php if (isset($errors['NazevProjektu'])) echo $errors['NazevProjektu'] ?>
         </div>
-        <?php if (isset($errors['NazevProjektu'])) echo $errors['NazevProjektu'] ?>
+        <?php if (isset($errors['nazevprojektu'])) echo $errors['nazevprojektu'] ?>
     </div>   
     <div class="form-group">           
         <label class="control-label col-sm-2">Datum odevzdání projektu</label>
         <div class="col-sm-7">
             <input type="text" class="form-control" value="<?php if (isset($dataForm['DatumOdevzdaniProjektu'])) echo $dataForm['DatumOdevzdaniProjektu'] ?>" name="DatumOdevzdaniProjektu" id="DatumOdevzdaniProjektu">
         </div>
-        <?php if (isset($errors['DatumOdevzdaniProjektu'])) echo $errors['DatumOdevzdaniProjektu'] ?>
+        <?php if (isset($errors['datumodevzdaniprojektu'])) echo $errors['datumodevzdaniprojektu'] ?>
     </div>
     <div class="form-group">       
         <label class="control-label col-sm-2">Typ projektu</label>
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($dataForm['TypProjektu'] == 'Continous integration') echo 'selected';
         } ?>>Continous integration</option>
             </select>
-<?php if (isset($errors['TypProjektu'])) echo $errors['TypProjektu'] ?>
+<?php if (isset($errors['typprojektu'])) echo $errors['typprojektu'] ?>
         </div>
 
     </div>    
