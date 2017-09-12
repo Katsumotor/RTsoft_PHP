@@ -6,9 +6,9 @@ $database = new Dotaz_DB();
 if (isset($_GET['smazat'])) {
     $result = $database->smazProjekt($_GET['smazat']);
     if ($result) {
-        echo "<h2>Požadovaný project byl smazán</h2>";
+        echo "<h2>Požadovaný projekt byl smazán</h2>";
     } else {
-        echo "<h2>Nebyl nalezen požadovaný project</h2>";
+        echo "<h2>Nebyl nalezen požadovaný projekt</h2>";
     }
 } elseif (isset($_GET['edit'])) {
     $database->getProjectPodleId($_GET['edit']);
